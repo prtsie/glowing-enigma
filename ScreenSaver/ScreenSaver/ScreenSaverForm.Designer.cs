@@ -30,18 +30,12 @@
         {
             components = new System.ComponentModel.Container();
             redrawer = new System.Windows.Forms.Timer(components);
-            snowflakeGenerator = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // redrawer
             // 
             redrawer.Interval = 30;
             redrawer.Tick += RedrawerTick;
-            // 
-            // snowflakeGenerator
-            // 
-            snowflakeGenerator.Interval = 200;
-            snowflakeGenerator.Tick += SnowflakeGeneratorTick;
             // 
             // ScreenSaverForm
             // 
@@ -59,15 +53,12 @@
             ShowInTaskbar = false;
             SizeGripStyle = SizeGripStyle.Hide;
             Text = "Form1";
-            TopMost = true;
             WindowState = FormWindowState.Maximized;
             Shown += ScreenSaverForm_Shown;
             ResumeLayout(false);
         }
 
         #endregion
-
         private System.Windows.Forms.Timer redrawer;
-        private System.Windows.Forms.Timer snowflakeGenerator;
     }
 }
