@@ -1,6 +1,6 @@
 ﻿namespace ScreenSaver
 {
-    internal class Snowflake
+    internal sealed class Snowflake
     {
         private const float SpeedSizeFactorMultiplier = 2f;
         private const float SwingSizeFactorMultiplier = 1f;
